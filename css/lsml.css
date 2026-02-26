@@ -1,0 +1,67 @@
+/* Reset et base */
+body.dc-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titre principal et en-tête */
+#content h2.post-title {
+  font-size: 2.2em;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Mise en forme des informations clés */
+#content h2:not(.post-title) {
+  font-size: 1.4em;
+  color: #2980b9;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* Style pour les listes et paragraphes */
+#content ul {
+  margin: 10px 0 20px 30px;
+  padding: 0;
+}
+#content p {
+  margin: 10px 0;
+}
+
+/* Mise en page du schedule */
+#content ul ul {
+  margin-left: 20px;
+}
+#content strong {
+  color: #e74c3c;
+}
+
+/* Responsive et conteneurs */
+@media (min-width: 768px) {
+  #content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .post-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}
+
+/* Liens */
+#content a {
+  color: #3498db;
+  text-decoration: none;
+}
+#content a:hover {
+  text-decoration: underline;
+}
